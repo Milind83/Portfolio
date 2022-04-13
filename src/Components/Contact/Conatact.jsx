@@ -1,5 +1,21 @@
 import "./Contact.css";
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+
+
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_flp2zfm', 'template_hgthwuk', form.current, 'DjO-iBVw6q_y5AADb')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <div className="contact-form" id="contact">
       <div className="w-left">
@@ -14,7 +30,7 @@ const Contact = () => {
       </div>
       {/* right side form */}
       <div className="c-right">
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="user_name"
@@ -28,7 +44,7 @@ const Contact = () => {
             placeholder="Email"
           />
           <textarea name="message" className="user" placeholder="Message" />
-          <button className="button">Send</button>
+          <button className="button" type="submit">Send</button>
           <div className="blur-pink"></div>
           <div className="blur-blue"></div>
         </form>

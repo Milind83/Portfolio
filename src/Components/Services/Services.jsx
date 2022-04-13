@@ -15,11 +15,11 @@ function Services() {
       <div className="awsome">
         <span>My Awsome</span>
         <span>Services</span>
-        <spane>
+        <span>
           Lorem, ipsum dolor sit amet consectetur adipi
           <br />
           sicing elit. Voluptate, sapiente.
-        </spane>
+        </span>
 
         {/* ........For Download Cv..... */}
         {/* <a href="https://drive.google.com/file/d/1BzFmmpu_AdqEraSM9vSU09Ar2tC-zDe9/view?usp=" download> */}
