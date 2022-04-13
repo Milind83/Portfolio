@@ -16,33 +16,37 @@ function Works() {
           Lorem, ipsum dolor sit amet consectetur adipi
           <br />
           sicing elit. Voluptate, sapiente.
-          <br />Lorem, ipsum dolor sit amet consectetur Voluptate, sapiente.
+          <br />
+          Lorem, ipsum dolor sit amet consectetur Voluptate, sapiente.
           <br />
           sicing elit. Voluptate, sapiente.
         </spane>
-          <button className="button s-button">HIre Me</button>
+        <button className="button s-button">Hire Me</button>
         <div className="blur s-blur1"></div>
       </div>
 
       {/* ....right side.... */}
       <div className="w-right">
-          <div className="w-maincircle">
-              <div className="w-seccircle">
-                  <img src={Upwork} alt="" />
-              </div>
-              <div className="w-seccircle">
-                  <img src={Fiverr} alt="" />
-              </div>
-              <div className="w-seccircle">
-                  <img src={Amazon} alt="" />
-              </div>
-              <div className="w-seccircle">
-                  <img src={Shopify} alt="" />
-              </div>
-              <div className="w-seccircle">
-                  <img src={Facebook} alt="" />
-              </div>
+        <div className="w-mainCircle">
+          <div className="w-secCircle">
+            <img src={Upwork} alt="" />
           </div>
+          <div className="w-secCircle">
+            <img src={Fiverr} alt="" />
+          </div>
+          <div className="w-secCircle">
+            <img src={Amazon} alt="" />
+          </div>
+          <div className="w-secCircle">
+            <img src={Facebook} alt="" />
+          </div>
+          <div className="w-secCircle">
+            <img src={Shopify} alt="" />
+          </div>
+        </div>
+        {/* ....background circle.... */}
+        <div className="w-backCircle blueCircle"></div>
+        <div className="w-backCircle yellowCircle"></div>
       </div>
     </div>
   );

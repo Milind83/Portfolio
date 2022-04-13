@@ -56,11 +56,28 @@
 .s-blur1{
     background:'#ABF1FF94';
     left: -18rem;
-    top: 13rem;
+    top: 35rem;
+    background: rgb(211, 141, 255);
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: var(--purple);
+    z-index:-9 ;
+    filter: blur(72px);
+
 }
 .s-blur2{
     background: var(--perple);
-    left: 14rem;
-    top: 8rem;
+    left: 30rem;
+    top: 2rem;
+    background: #C1F5FF;
+    position: absolute;
+    width: 21rem;
+    border-radius: 50%;
+    height: 11rem;
+    z-index:-9 ;
+    filter: blur(72px);
+
 }
   
